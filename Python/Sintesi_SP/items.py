@@ -23,8 +23,6 @@ class Map:
     
     def coordAssigment(self, n_coord):
         #/ Input bits calculation
-        n_bits = []
-        if n_coord > 5:
             print("Too many input variables")
             return -1
         assign_l = [0,0,1,1,2,2]
@@ -35,3 +33,22 @@ class Map:
         top_bits = self.n_input - left_bits
         result = [left_bits, top_bits]
         return result
+
+    def createCoordinate(self, num):
+        _len = pow(2, num) / 2
+        resutl =[]
+        for x in range(_len):
+            temp = []
+
+      
+    def fromBintoGray(self,binary):
+        b = binary
+        gray = [b[0]]
+        p = b[0]
+        b.pop(0)
+        for current in b:
+            gray.append(self._xor[p,current])
+            p = current
+        return gray
+
+
