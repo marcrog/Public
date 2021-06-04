@@ -10,6 +10,11 @@ class Map:
         self.output = list_output
         #List of Rows
         self.rows = self.makeRows(str_all)
+        #Coordinates
+        self.left_num_c = 0
+        self.top_num_c = 0
+        self.tab_num_c = 0
+        self.n_map = self.n_output
         
     def makeRows (self, str_all):
         start_str = str_all
@@ -23,17 +28,25 @@ class Map:
             inc2 += num_to_split
         return result
     
-    # def coordAssigment(self, n_coord):
-        # #/ Input bits calculation
-            # print("Too many input variables")
-            # return -1
-        # left_bits = assign_l[n_coord]
-        # if self.n_input == 5 and self.n_output == 1 :
-            # self.n_output += 1
-            # left_bits -= 1
-        # top_bits = self.n_input - left_bits
-        # result = [left_bits, top_bits]
-        # return result
+    def coordAssigment(self):
+        assign_l = {
+            2 : 1,
+            3 : 1,
+            4 : 2,
+            5 : 2
+        }
+        #/ Input bits calculation
+        if self.n_input > 5:
+            print("Too many input variables")
+            return -1
+        self.tab_bits = 1
+        self.left_num_c = assign_l[self.n_input]
+        self.top_num_c = self.n_input - self.left_num_c
+        if self.n_input == 5:
+            self.tab_num_c = 1
+            self.top_num_c = 2
+        result = [self.left_num_c, self.top_num_c, self.tab_num_c]
+        return result
 
     def createCoordinate(self, num):
         t = c.Coord(num)
