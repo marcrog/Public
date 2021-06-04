@@ -1,3 +1,5 @@
+import roba.coord as c
+
 class Map:
     def __init__(self, list_input, list_output, str_all):
         #Number of elements
@@ -21,34 +23,29 @@ class Map:
             inc2 += num_to_split
         return result
     
-    def coordAssigment(self, n_coord):
-        #/ Input bits calculation
-            print("Too many input variables")
-            return -1
-        assign_l = [0,0,1,1,2,2]
-        left_bits = assign_l[n_coord]
-        if self.n_input == 5 and self.n_output == 1 :
-            self.n_output += 1
-            left_bits -= 1
-        top_bits = self.n_input - left_bits
-        result = [left_bits, top_bits]
-        return result
+    # def coordAssigment(self, n_coord):
+        # #/ Input bits calculation
+            # print("Too many input variables")
+            # return -1
+        # left_bits = assign_l[n_coord]
+        # if self.n_input == 5 and self.n_output == 1 :
+            # self.n_output += 1
+            # left_bits -= 1
+        # top_bits = self.n_input - left_bits
+        # result = [left_bits, top_bits]
+        # return result
 
     def createCoordinate(self, num):
-        _len = pow(2, num) / 2
-        resutl =[]
+        t = c.Coord(num)
+        _len = pow(2, num)
+        result =[]
         for x in range(_len):
-            temp = []
+            if x == 0:
+                result.append(t.val)
+            else:
+                result.append(t.incrementOne())
+        return result
 
       
-    def fromBintoGray(self,binary):
-        b = binary
-        gray = [b[0]]
-        p = b[0]
-        b.pop(0)
-        for current in b:
-            gray.append(self._xor[p,current])
-            p = current
-        return gray
 
 

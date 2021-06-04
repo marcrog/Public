@@ -4,7 +4,6 @@ class Coord:
         self.num_v = num_v
         self.val = []
         self.setToZero()
-        print(self.val)
         self._xor = {
             (0, 0): 0,
             (0, 1): 1,
