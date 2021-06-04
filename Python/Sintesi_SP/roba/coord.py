@@ -20,12 +20,6 @@ class Coord:
         for x in range(self.num_v):
             self.val.append(0)
     
-    def toZero(self):
-        val = []
-        for x in range(self.num_v):
-            val.append(0)
-        return val
-
     def fromGraytoBin(self):
         temp = self.val
         binary = [temp[0]]
@@ -47,19 +41,10 @@ class Coord:
             p = current
         return gray
 
-    def setBin(self, int_):
-        self.setToZero()
-        for i  in range(int_):
-            self.incrementOne()
-        pass
 
     def incrementOne(self):
-        temp_bin = self.val
-        gray = self.fromBintoGray(temp_bin)
-        if temp_bin != gray and temp_bin != self.toZero():
-            print("Uguale")
-            return gray
-        print("Diversi")
+        temp_bin = []
+        temp_bin += self.val
         resto = 1
         i = self.num_v - 1
         while resto == 1 and i >= 0:
@@ -70,4 +55,6 @@ class Coord:
                 temp_bin[i] = 1
                 resto = 0
             i -= 1
+        self.val = temp_bin
+        temp_bin = self.fromBintoGray(temp_bin)
         return temp_bin

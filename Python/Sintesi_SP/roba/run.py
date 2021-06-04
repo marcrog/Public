@@ -1,7 +1,6 @@
 import coord as c
+n = int(input("Inserire lunghezza coordinata: "))
+a = c.Coord(n)
 
-a = c.Coord(4)
-
-for i in range(16):
-    a.incrementOne()
-    print(a.val)
+for i in range(pow(2, a.num_v) - 1):
+    print(a.incrementOne())
