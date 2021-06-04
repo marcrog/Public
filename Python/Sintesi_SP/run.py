@@ -1,6 +1,6 @@
 import items as i
 
-a = i.Map(["A", "B", "C", "D"], ["U"], "000100100100100001111111")
+a = i.Map(["A", "B", "C", "D", "E", "F"], ["U"], "000100100100100001111111")
 print(a.input)
 print(a.output)
 print(a.rows)

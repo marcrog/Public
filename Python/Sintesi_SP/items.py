@@ -33,17 +33,18 @@ class Map:
             2 : 1,
             3 : 1,
             4 : 2,
-            5 : 2
+            5 : 2,
+            6 : 2
         }
         #/ Input bits calculation
-        if self.n_input > 5:
+        if self.n_input > 6:
             print("Too many input variables")
             return -1
         self.tab_bits = 1
         self.left_num_c = assign_l[self.n_input]
         self.top_num_c = self.n_input - self.left_num_c
-        if self.n_input == 5:
-            self.tab_num_c = 1
+        if self.n_input >= 5:
+            self.tab_num_c = (self.n_input - 5) + 1
             self.top_num_c = 2
         result = [self.left_num_c, self.top_num_c, self.tab_num_c]
         return result
