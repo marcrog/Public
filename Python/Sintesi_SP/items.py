@@ -60,6 +60,28 @@ class Map:
                 result.append(t.incrementOne())
         return result
 
+    def createMatrix(self):
+        #Matrix with max 4 inputs
+        m = []
+        inputs = []
+        for row in self.rows:
+            pass
+
+    def findOutput(self, l):
+        i = 0
+        rows = []
+        rows += self.rows
+        for row in rows:
+
+            output = row[-1]
+            row.pop(-1)
+            for bit in row:
+                if bit == l[i]:
+                    i += 1
+            if i == len(l):
+                return output
+            i = 0
+        return []
       
 
 

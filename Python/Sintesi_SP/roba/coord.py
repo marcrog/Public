@@ -40,7 +40,6 @@ class Coord:
             p = current
         return gray
 
-
     def incrementOne(self):
         temp_bin = []
         temp_bin += self.val
@@ -57,3 +56,31 @@ class Coord:
         self.val = temp_bin
         temp_bin = self.fromBintoGray(temp_bin)
         return temp_bin
+
+    def graySequence(self):
+        sequence = []
+        self.setToZero()
+        for i in range(pow(2, self.num_v)):
+            if i == 0:
+                sequence.append(self.val)
+            else:
+                sequence.append(self.incrementOne())
+        return sequence
+
+    def spliceSequence(self, index):
+        conv = {
+            0 : 1,
+            1 : 0
+        }
+        index_conv = conv[index]
+        result = self.graySequence()
+        for pair in result:
+            pair.pop(index_conv)
+        return result
+
+    
+
+
+
+
+
