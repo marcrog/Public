@@ -1,0 +1,21 @@
+Cosa serve e cosa deve fare una matrice?
+
+
+Prende subito in input come attribut n° colonne e n° righe
+
+Essere creata appena inizializzata ----> funzione createMat(self) ---
+                                                                    |
+                     Memorizzazione Dati ??              <--------- |
+
+Funzione che ritorni il valore della matrice nelle coordinate date 
+-----> val(c1, c2, c3, ...)
+
+Funzione che la stampi
+
+Matrice sarà numerata con gli indici degli array -----> Conversione intero-codice di gray
+
+
+
+
+
+
