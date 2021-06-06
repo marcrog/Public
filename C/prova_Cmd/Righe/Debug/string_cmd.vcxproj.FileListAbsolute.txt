@@ -1,0 +1,2 @@
+C:\Users\Raffaella\Desktop\Simone\C\prova_Cmd\string_cmd\Debug\string_cmd.exe
+C:\Users\Raffaella\Desktop\Simone\C\prova_Cmd\string_cmd\Debug\string_cmd.pdb

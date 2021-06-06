@@ -1,0 +1,32 @@
+ Il volume nell'unit… C non ha etichetta.
+ Numero di serie del volume: 4883-EEB0
+
+ Directory di C:\Users\Raffaella\Desktop
+
+20/12/2020  23:24    <DIR>          .
+20/12/2020  23:24    <DIR>          ..
+11/11/2020  21:58            89.950 11-11-20.bak
+09/10/2020  13:36         1.806.301 Analisi Matematica.pdf
+18/11/2020  17:07           451.769 Autodichiarazione Fin Atleti tesserati.pdf
+14/10/2020  09:40               373 Bho.c
+01/11/2020  18:29         3.047.814 Esercizi di analisi matematica.pdf
+04/11/2020  19:33             2.259 GeoGebra Classico.lnk
+07/12/2020  18:01           365.714 Google Pacinotti.html
+08/10/2020  18:00            61.403 ISEE_ATT_PROT_INPS-ISEE-2020-04043869N-00.pdf
+05/05/2020  17:52             1.681 LeagueClient.exe.lnk
+14/04/2020  12:10             1.609 Legends of Runeterra.lnk
+07/09/2020  14:36    <DIR>          Mamma
+14/12/2020  22:33    <DIR>          Martina
+25/11/2020  15:17             2.376 Microsoft Teams.lnk
+19/11/2020  17:50             1.476 NVIDIA GeForce NOW.lnk
+28/09/2020  16:48    <DIR>          pcad2020proita64bit_20.0.8.12
+02/11/2020  16:06            32.864 sanitari_2.zip
+21/12/2020  13:29    <DIR>          Simone
+06/10/2020  15:21               377 Siti_libri.txt
+13/10/2020  13:47             1.870 Spotify.lnk
+07/09/2020  15:15               927 Sublime Text 3.lnk
+15/12/2020  13:04               801 Uni.txt
+19/04/2020  09:38             2.217 WhatsApp.lnk
+16/07/2018  22:59               900 æTorrent.lnk
+              19 File      5.872.681 byte
+               6 Directory  43.370.590.208 byte disponibili

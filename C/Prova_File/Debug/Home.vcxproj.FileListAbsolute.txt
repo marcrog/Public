@@ -1,0 +1,4 @@
+C:\Users\Raffaella\Desktop\Simone\C\Home\Debug\Home.exe
+C:\Users\Raffaella\Desktop\Simone\C\Home\Debug\Home.pdb
+C:\Users\Raffaella\Desktop\Simone\C\Prova_File\Debug\Home.exe
+C:\Users\Raffaella\Desktop\Simone\C\Prova_File\Debug\Home.pdb
