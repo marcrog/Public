@@ -1,4 +1,17 @@
-import roba.coord as c
+import Matrix.matrix as m
+
+def makeRows (n_input, n_output, str_all):
+    start_str = str_all
+    num_to_split = n_input + n_output
+    inc2 = num_to_split
+    inc1 = 0
+    result = []
+    while inc2 <= len(str_all):
+        result.append(start_str[inc1:inc2])
+        inc1 += num_to_split
+        inc2 += num_to_split
+    return result
+
 
 class Map:
     def __init__(self, list_input, list_output, str_all):
@@ -9,24 +22,14 @@ class Map:
         self.input = list_input
         self.output = list_output
         #List of Rows
-        self.rows = self.makeRows(str_all)
+        self.rows = makeRows(self.n_input, self.n_output, str_all)
+        #self.rows = makeRows(3,1, str_all)
         #Coordinates
         self.left_num_c = 0
         self.top_num_c = 0
         self.tab_num_c = 0
         self.n_map = self.n_output
         
-    def makeRows (self, str_all):
-        start_str = str_all
-        num_to_split = self.n_input + self.n_output
-        inc2 = num_to_split
-        inc1 = 0
-        result = []
-        while inc2 <= len(str_all):
-            result.append(start_str[inc1:inc2])
-            inc1 += num_to_split
-            inc2 += num_to_split
-        return result
     
     def coordAssigment(self):
         assign_l = {
@@ -49,39 +52,27 @@ class Map:
         result = [self.left_num_c, self.top_num_c, self.tab_num_c]
         return result
 
-    def createCoordinate(self, num):
-        t = c.Coord(num)
-        _len = pow(2, num)
-        result =[]
-        for x in range(_len):
-            if x == 0:
-                result.append(t.val)
-            else:
-                result.append(t.incrementOne())
-        return result
 
     def createMatrix(self):
         #Matrix with max 4 inputs
-        m = []
-        inputs = []
-        for row in self.rows:
-            pass
+        matrix = m.Matrix(self.input, self.rows)
 
-    def findOutput(self, l):
-        i = 0
-        rows = []
-        rows += self.rows
-        for row in rows:
 
-            output = row[-1]
-            row.pop(-1)
-            for bit in row:
-                if bit == l[i]:
-                    i += 1
-            if i == len(l):
-                return output
-            i = 0
-        return []
+    # def findOutput(self, l):
+        # i = 0
+        # rows = []
+        # rows += self.rows
+        # for row in rows:
+
+            # output = row[-1]
+            # row.pop(-1)
+            # for bit in row:
+                # if bit == l[i]:
+                    # i += 1
+            # if i == len(l):
+                # return output
+            # i = 0
+        # return []
       
 
 
