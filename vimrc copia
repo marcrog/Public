@@ -1,0 +1,85 @@
+nmap <F2> :NERDTreeToggle<CR>
+"autocmd FileType java setlocal omnifunc=javacomplete#Complete
+syntax on
+set nowrap
+set background=dark
+set noerrorbells
+set noswapfile
+set scrolloff=8
+set nu
+set nuw=4
+set updatetime=50
+set nohlsearch
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set guicursor=
+set nowrap
+set incsearch
+set showcmd
+"let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
+"highlight Comment ctermbg=DarkGray
+"highlight Constant ctermbg=Blue
+"highlight Normal ctermbg=Black
+"highlight Special ctermbg=DarkMagenta
+"highlight Cursor guifg=white guibg=black
+""highlight iCursor guifg=white guibg=black
+"set guicursor=n-v-c-i-n:block-Cursor
+"""set guicursor+=i:ver100-iCursor
+"set guicursor+=n-v-c-i:blinkon1
+"""set guicursor+=i:blinkwait10
+""highlight Normal ctermbg=black ctermfg=white
+
+
+set nocompatible              " be iMproved, required
+set showcmd
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'preservim/NERDTree'
+Plugin 'artanikin/vim-synthwave84'
+Plugin 'morhetz/gruvbox'
+Plugin 'fielding/vice'
+"Plugin 'puremourning/vimspector'
+Plugin 'ayu-theme/ayu-vim' 
+Plugin 'atahabaki/archman-vim'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'preservim/nerdcommenter'
+"Plugin 'itchyny/lightline.vim'
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
+Plugin 'ParamagicDev/vim-medic_chalk'
+Plugin 'davidhalter/jedi-vim'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'artur-shaik/vim-javacomplete2'
+Plugin 'tomasr/molokai'
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+set bg=dark
+
+colorscheme gruvbox
+let mapleader= " "
+
+"highlight LineNr term=bold cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=Gray guibg=NONE
+
+"let g:Lightline.colorscheme = 'github_light'
+
+
+ " or path directly to the library file
+ let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
