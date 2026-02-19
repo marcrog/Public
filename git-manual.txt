@@ -11,3 +11,17 @@ salvare le modifiche facendo:
 per aggiornare un progetto github salvato in locale
 "git pull"
 
+
+
+AUTENTICAZIONE:
+github richiede un username e tocke ogni volta che si vuole fare un cambiamento 
+ad una repositories
+
+per non dover per ogni "push" fare questo procedimento si può salvare il token
+sul dispositivo, in due modi:
+
+1) git config --global credential.helper 'cache --timeout=28800'
+si salva in RAM per un certo periodo di tempo (es. 8 ore)
+
+2) git config --global credential.helper store
+si salva permanentemente sul dispositivo
