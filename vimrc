@@ -1,5 +1,10 @@
 nmap <F2> :NERDTreeToggle<CR>
 "autocmd FileType java setlocal omnifunc=javacomplete#Complete
+" Forza l'uso di UTF-8 per gestire gli accenti
+set encoding=utf-8
+set fileencoding=utf-8
+set termencoding=utf-8
+
 syntax on
 set nowrap
 set background=dark
@@ -46,7 +51,6 @@ Plugin 'morhetz/gruvbox'
 Plugin 'fielding/vice'
 "Plugin 'puremourning/vimspector'
 Plugin 'ayu-theme/ayu-vim' 
-Plugin 'atahabaki/archman-vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'preservim/nerdcommenter'
 "Plugin 'itchyny/lightline.vim'
