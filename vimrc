@@ -79,7 +79,16 @@ let mapleader= " "
 "highlight LineNr term=bold cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=Gray guibg=NONE
 
 "let g:Lightline.colorscheme = 'github_light'
+" or path directly to the library file
 
 
- " or path directly to the library file
- let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+"codice seguente server per puntare a libclang, libreria per autocompletamento
+"di C (sia su macos che su unix):"
+
+"if has('macunix')
+    "Qui potresti mettere il percorso per MacOS, se necessario
+    "let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+"elseif has('unix')
+    " Qui potresti mettere il percorso per Debian, se necessario
+    " let g:clang_library_path='/usr/lib/llvm-14/lib/libclang.so'
+"endif
