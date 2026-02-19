@@ -1,0 +1,13 @@
+"git clone https://github.com/...."
+serve per importare un progetto github
+
+una volta che importo un progetto, se ho autorizzazione per moficarlo posso poi 
+salvare le modifiche facendo:
+
+1) git add . (aggiunge tutte le modifiche fatte al "pacchetto")
+2) git commit -m "descrizione pacchetto"
+3) git push (spedisco pacchetto con la sua descrizione)
+
+per aggiornare un progetto github salvato in locale
+"git pull"
+
