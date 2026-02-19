@@ -1,2 +1,0 @@
-# Progetti
-Backup Programs folder
