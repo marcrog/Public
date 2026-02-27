@@ -1,9 +1,11 @@
 #/ IMPOSTAZION DI SISTEMA
 
-export LANG=it_IT.UTF-8
-export LC_ALL=it_IT.UTF-8
-export LC_CTYPE=it_IT.UTF-8
+# Forza i colori per i comandi di base
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 
+# Disegna il prompt a colori (Verde per utente@host, Blu per il percorso)
+PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 
 #/  MY ALIAS ---------
