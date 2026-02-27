@@ -1,5 +1,13 @@
+#/ IMPOSTAZION DI SISTEMA
+
+export LANG=it_IT.UTF-8
+export LC_ALL=it_IT.UTF-8
+export LC_CTYPE=it_IT.UTF-8
+
+
+
 #/  MY ALIAS ---------
-alias cd..='cd ..'
+alias ..='cd ..'
 alias bprofile='vi ~/.bash_profile'
 alias uni='cd /Users/simonecudia/Uni/'
 alias juni='cd /Users/simonecudia/Uni/FI_2/'
