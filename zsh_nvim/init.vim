@@ -30,7 +30,7 @@ filetype plugin indent on
 
 if !exists('g:vscode')
     "------ PLUGINS -------"
-    call plug#begin('~/.local/share/nvim/plugged')
+    call plug#begin('~/.config/nvim/plugged')
     Plug 'preservim/NERDTree'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'morhetz/gruvbox',
